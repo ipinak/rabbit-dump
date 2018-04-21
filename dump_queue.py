@@ -11,7 +11,7 @@ def callback(ch, method, properties, body):
 
 
 def convert_to_csv(json_data):
-    with open('messages.csv', 'a') as csvfile:
+    with open('/output/messages.csv', 'a') as csvfile:
         csv_writer = csv.writer(csvfile, delimiter=',', quotechar='|')
         csv_writer.writerow(json_data.values())
 
