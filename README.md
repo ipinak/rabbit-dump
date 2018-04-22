@@ -10,9 +10,8 @@ advise you to use a virtual environment like this.
 ```
 $ virtualenv dev.venv
 $ source dev.venv/bin/activate
+$ python dump_queue.py localhost guest guest_pass my-host my-test-queue
 ```
-
-`$ python dump_queue.py localhost guest guest_pass my-host my-test-queue`
 
 Executing this will create a file the file `/output/message.csv` with the
 messages from rabbit.
